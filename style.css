@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+#sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#sedan button {
+  color: hsl(31, 77%, 52%);
+}
+
+#sedan button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 92%);
+  cursor: pointer;
+}
+
+#suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#suvs button {
+  color: hsl(184, 100%, 22%);
+}
+
+#suvs button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 92%);
+  cursor: pointer;
+}
+
+#luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+#luxury button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 92%);
+  cursor: pointer;
+}
+
+#card {
+  display: flex;
+  width: 900px;
+  font-size: 15px;
+}
+
+.sections {
+  padding: 3rem 3rem 2.5rem 2.5rem;
+  text-align: start;
+}
+
+.sections img {
+  padding-bottom: 1.65rem;
+}
+
+.sections h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  padding-bottom: 1.75rem;
+}
+
+.sections p {
+  font-weight: 400;
+  color: hsl(0, 0%, 92%);
+  line-height: 22px;
+  padding-bottom: 6rem;
+}
+
+.sections button {
+  appearance: none;
+  border: none;
+  width: 65%;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 13.8px;
+  font-weight: 400;
+  padding: 0.9rem;
+  border-radius: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.sections button:hover {
+  border: 2.5px solid hsl(0, 0%, 95%);
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 2rem;
+  }
+
+  #card {
+    flex-direction: column;
+    width: 300px;
+  }
+
+  #sedan {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  #luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  .sections p {
+    padding-bottom: 2rem;
+    font-size: 15.5px;
+  }
+}
